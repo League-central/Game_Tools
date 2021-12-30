@@ -18,7 +18,10 @@ public class Sprite {
 			loadImage("/"+imageLocation);
 		else 
 			loadImage(imageLocation);
-
+	}
+	
+	public Sprite(BufferedImage img) {
+		image = img;
 	}
 
 	void loadImage(String imageFile) {

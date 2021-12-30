@@ -1,8 +1,10 @@
 package game_tools;
 
 import java.awt.Dimension;
+import java.util.Random;
 
 public class Game {
+	static Random gen = new Random();
 	GameFrame frame;
 	public int screenWidth;
 	public int screenHeight;
