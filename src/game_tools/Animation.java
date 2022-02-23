@@ -19,6 +19,12 @@ public class Animation {
 		this.spritesList = new ArrayList<>(Arrays.asList(sprites));
 	}
 
+	Animation(String... imageFileLocations) {
+		this.spritesList = new ArrayList<>(Arrays.asList(
+				Arrays.stream(imageFileLocations).map(Sprite::new).toArray(Sprite[]::new)
+		));
+	}
+
 	public void add(Sprite sprite) {
 		this.spritesList.add(sprite);
 	}
